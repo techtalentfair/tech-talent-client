@@ -63,14 +63,14 @@ function HeroSection() {
           alt="light-purple"
         />
         <Image
-          className="absolute bottom-[-150px] left-[250px]"
+          className="hidden md:block absolute bottom-[-150px] left-[250px]"
           src="/assets/light-pink-50.svg"
           width={400}
           height={400}
           alt="light-purple"
         />
         <Image
-          className="absolute animate-pulse right-[-300px]"
+          className="hidden md:block absolute animate-pulse right-[-300px]"
           src="/assets/light-pink-20.svg"
           width={400}
           height={400}
