@@ -112,7 +112,7 @@ const Header = () => {
                 <Link
                   className=
                     {clsx(
-                      "flex justify-center items-center w-full h-10 rounded-md hover:text-purple-500 font-bold transition-colors ",
+                      "flex justify-center items-center w-full h-20 rounded-md hover:text-purple-500 font-bold transition-colors ",
                       pathname === link.href ? "text-purple-500" : "text-white"
                     )}
                   
