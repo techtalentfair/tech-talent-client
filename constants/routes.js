@@ -2,6 +2,7 @@ const ROUTES = {
   HOME: "/",
   ABOUT_US: "/about-us",
   OUR_EVENTS: "/events",
+  PARTNERS: "/partners",
   EVENT_DETAILS: "/event-details/:id",
   PROJECT_DETAILS: "/project-details/:id",
   CONTACT_US: "/contact-us",
