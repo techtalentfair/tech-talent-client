@@ -34,7 +34,7 @@ function HeroSection() {
             ">
             Tech Talent is a vibrant community created specifically for the
             Computer Science department within the Faculty of Science at Cairo
-            University. Our mission is to assist students in navigating the
+            University.<br /> Our mission is to assist students in navigating the
             ever-evolving world of technology and to prepare them for the
             competitive job market.
           </p>
@@ -56,17 +56,31 @@ function HeroSection() {
         </div>
         {/* Light absolute images */}
         <Image
-          className="absolute top-[-200px] left-[-250px]"
+          className="absolute 
+          top-[-150px]
+          left-[-150px]
+          md:top-[-200px] 
+          md:left-[-250px]
+          
+          "
           src="/assets/light-purple-50.svg"
           width={400}
           height={400}
           alt="light-purple"
         />
         <Image
-          className="hidden md:block absolute bottom-[-150px] left-[250px]"
+          className="md:block absolute
+          
+          top-[150px]
+          right-[0px]
+          md:bottom-[-150px] 
+          md:left-[250px]
+          
+          "
           src="/assets/light-pink-50.svg"
           width={400}
           height={400}
+
           alt="light-purple"
         />
         <Image
