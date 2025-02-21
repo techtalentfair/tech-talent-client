@@ -7,13 +7,14 @@ import { exampleEvent } from '@/data/eventsData'
 import CustomButton from '@/components/CustomButton'
 import { useRouter } from 'next/navigation';
 import ROUTES from '@/constants/routes';
+import RegisterSectionComponent from '@/components/RegisterSectionComponent';
 
 export default function UpcomingEventsSection() {
 
   const router = useRouter();
 
 
-  return (
+  return (<>
     <section
       className="container flex flex-col min-w-full min-h-[calc(100vh-80px)] py-20"
       id="Upcoming-Events"
@@ -29,5 +30,7 @@ export default function UpcomingEventsSection() {
       </div>
       <EventsTimeLineContainer eventsData={[exampleEvent]} />
     </section>
+    <RegisterSectionComponent eventId={exampleEvent.id} />
+  </>
   )
 }
