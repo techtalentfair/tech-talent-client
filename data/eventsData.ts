@@ -1,4 +1,6 @@
-export const eventsData = [
+import { DEventModel, DEventTimeSlot } from "@/types/database";
+
+export const agendaData: DEventTimeSlot[] = [
   {
     title: "Opening Remarks",
     url: null,
@@ -151,7 +153,7 @@ export const eventsData = [
     },
     description:
       "Problem :\nMany people waste valuable materials such as glass, paper,plastic, compost,and oil by throwing them in the trash or burn it, often unaware of their significance. these materials, individuals can not only contribute to environmental preservation but also generate income\nSolution:\n To address this problem, we propose developing a mobile application It enables people to sell these valuable materials to other people who can benefit from them and earn money.Additionally, the app will allow users to buy any items that can be used While enhancing environmental sustainability.",
-    imageUri: "/Be_Green1.png", 
+    imageUri: "/Be_Green1.png",
   },
   {
     title: "AToZ",
@@ -177,3 +179,84 @@ export const eventsData = [
     imageUri: null,
   },
 ];
+
+
+const EventExampleContent = `
+
+# Welcome to the Tech Conference 2025 🎉  
+
+## About This Event  
+This event brings together **innovators**, _developers_, and tech enthusiasts from around the world.  
+
+---
+
+## 📝 Agenda  
+1. **Opening Remarks** - *Introduction to the event*  
+2. **Workshops**  
+   - AI & Machine Learning  
+   - Web Development 🚀  
+   - Cybersecurity 🔒  
+3. **Panel Discussion**  
+   > "The Future of Technology: What’s Next?"  
+
+---
+
+## 📷 Event Highlights  
+![Tech Conference](https://placehold.co/600x400?text=Event+Banner)  
+
+## Code Snippets  
+Here’s a sample JavaScript snippet to illustrate markdown code rendering:  
+
+\`\`\`javascript
+const greet = (name) => {
+  return \`Hello, \${name}! Welcome to the event.\`;
+};
+
+console.log(greet("Developer"));
+\`\`\`
+
+---
+
+## 📊 Statistics  
+| Feature       | Status       |  
+|--------------|-------------|  
+| Registrations | ✅ Open     |  
+| Tickets Sold  | 🎟️ 1200+   |  
+| Keynote Speaker | 🔥 Confirmed |  
+
+---
+
+## 🎤 Guest Speakers  
+- **Dr. Hossam Hassen** – CEO @ Tech Talent Fair
+- **Ahmed M. Ezzeldeen** – CTO @ AI Innovations  
+- **Dr. Omer morad** – Professor @ MIT  
+
+---
+
+## 📌 Important Notes  
+⚠️ _Please bring your conference badge for entry._  
+💡 **Wi-Fi Details:** \`SSID: TechConf2025 | Password: innovate123\`
+
+---
+
+## 📢 Call to Action  
+👉 **[Register Now](https://example.com/register)** before spots run out!  
+`;
+
+export const exampleEvent: DEventModel = {
+  id: "event-123",
+  title: "TTF-2025 Grads Event 2025",
+  images: ["/events/img1.jpg", "/events/img2.jpg"],
+  date: "May 12 – Sep 3",
+  time: "05:00 pm",
+  location: {
+    name: "AUC New Cairo",
+    url: null,
+  },
+  description:
+    "Celebrate a tenth class of graphic design excellence at AUC's CmdX exhibition - showcasing transformative ideas from our visionary graduates. Vivamus semper mi ipsum, vitae finibus mauris commodo non. Mauris nibh orci, efficitur vel ex vitae, lacinia tincidunt metus. Suspendisse interdum fermentum lacus ac sodales. Nulla tincidunt vitae lectus eget aliquam. Maecenas sit amet ex sit amet nibh malesuada porta ut ac nisi. Donec egestas diam lectus, sed tempor augue lobortis sit amet. Pellentesque mi augue, viverra porta sodales.",
+  bgImage: "https://placehold.co/450x450?text=450x450",
+  content: EventExampleContent,
+  agenda: agendaData,
+  relatedProjects: ["project-1", "project-2", "project-3"],
+};
