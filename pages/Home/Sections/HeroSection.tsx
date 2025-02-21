@@ -1,11 +1,11 @@
 import Image from "next/image";
-import Link from "next/link";
 import ScrollDownItem from "@/components/ScrollDownIteam";
+import CustomButton from "@/components/CustomButton";
 
 function HeroSection() {
 
   return (
-    <div
+    <section
       className="flex flex-col w-full justify-around items-center max-h-[750px] min-h-[calc(100vh-80px)]"
       id="Hero"
     >
@@ -38,18 +38,9 @@ function HeroSection() {
             ever-evolving world of technology and to prepare them for the
             competitive job market.
           </p>
-          <Link href="/#Register">
-            <button
-              className="
-                w-[200px]
-                h-[50px]
-              bg-purple-900 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-lg mt-5
-              transition duration-500 ease-in-out 
-            "
-            >
+            <CustomButton href="#" className="w-[200px] h-[50px]">
               Join us
-            </button>
-          </Link>
+            </CustomButton>
         </div>
         <div className="w-2/5 hidden md:block">
           <Image src="/assets/hero.png" width={590} height={560} alt="hero" />
@@ -70,11 +61,11 @@ function HeroSection() {
         />
         <Image
           className="md:block absolute
-          
           top-[150px]
           right-[0px]
-          md:bottom-[-150px] 
-          md:left-[250px]
+          md:top-[auto] 
+          md:bottom-[-250px] 
+          md:left-[150px]
           
           "
           src="/assets/light-pink-50.svg"
@@ -97,9 +88,9 @@ function HeroSection() {
         hoverColor="group-hover:text-purple-500"
         textColor="text-white"
         text="Discover more"
-        href="#Video"
+        href="#Upcoming-Events"
       />
-    </div>
+    </section>
   );
 }
 

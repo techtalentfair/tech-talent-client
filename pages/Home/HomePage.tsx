@@ -1,6 +1,7 @@
 import Header from "@/components/Header"
 import Footer from "@/components/Footer";
-import HeroSection from "@/pages/Home/HeroSection/HeroSection"
+import HeroSection from "@/pages/Home/Sections/HeroSection"
+import UpcomingEventsSection from "@/pages/Home/Sections/UpcomingEventsSection";
 
 
 export default function HomePage() {
@@ -9,6 +10,7 @@ export default function HomePage() {
       <Header />
       <main className="max-w-screen-xl mx-auto p-6 md:pl-10 pt-20 flex-col flex">
         <HeroSection />
+        <UpcomingEventsSection />
       </main>
       <Footer/>
     </>
