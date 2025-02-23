@@ -12,6 +12,15 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      keyframes:{
+        "infinite-scroll": {
+          "0%": { transform: "translateX(0)" },
+          "50%": { transform: "translateX(calc(-50%))"},
+        },
+      },
+      animation: {
+        "infinite-scroll": "infinite-scroll 20s linear infinite",
+      },
     },
   },
   plugins: [],
