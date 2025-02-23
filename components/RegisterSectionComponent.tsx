@@ -14,7 +14,7 @@ interface RegisterSectionComponentProps {
 export default function RegisterSectionComponent({eventId} : RegisterSectionComponentProps ) {
   const [selectedIndex, setSelectedIndex] = useState(0);
 
-  const handleTabClick = (index : 0 | 1 | 2) => {
+  const handleTabClick = (index : number) => {
     setSelectedIndex(index);
   };
 
