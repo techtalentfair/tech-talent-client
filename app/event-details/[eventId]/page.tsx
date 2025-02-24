@@ -1,11 +1,15 @@
 import EventDetailsPage from "@/pages/EventDetails/EventDetailsPage";
+import { NextPage } from "next";
 import React from "react";
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export default function EventDetails(props: { params: { eventId: any } }) {
-  const eventId = props.params.eventId;
-
-  return (
-    <EventDetailsPage eventId={eventId} />
-  );
+interface EventDetailsProps {
+  params: {
+    eventId: string;
+  };
 }
+
+const EventDetails: NextPage<EventDetailsProps> = ({ params }) => {
+  return <EventDetailsPage eventId={params.eventId} />;
+};
+
+export default EventDetails;
