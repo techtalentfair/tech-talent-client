@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowBigDown } from "lucide-react";
+import { LucideCircleArrowDown } from "lucide-react";
 
 type ScrollDownItemProps = {
   text?: string;
@@ -22,10 +22,9 @@ const ScrollDownItem: React.FC<ScrollDownItemProps> = ({
       <span className={`text-sm ${textColor} ${hoverColor} transition-all`}>
         {text}
       </span>
-        <ArrowBigDown
-          size={18}
-          className="text-[#C084FC] size-6 group-hover:text-purple-500 transition-all"
-        />
+      <LucideCircleArrowDown size={18}
+          className="text-[#C084FC] size-6 group-hover:text-purple-500 transition-all" />
+        
     </Link>
   );
 };
