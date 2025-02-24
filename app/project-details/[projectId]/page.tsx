@@ -1,12 +1,11 @@
 import ProjectDetailsPage from "@/pages/ProjectDetailsPage/ProjectDetailsPage";
 import React from "react";
 
-interface ProjectDetailsProps {
-  params: {
-    projectId: string;
-  };
-}
+type Params = Promise<{ projectId: string }>;
 
-export default function ProjectDetails({ params }: ProjectDetailsProps) {
-  return <ProjectDetailsPage projectId={params.projectId} />;
+export default async function ProjectDetails(props: { params: Params }) {
+  const params = await props.params;
+  const projectId = params.projectId;
+
+  return <ProjectDetailsPage projectId={projectId} />;
 }
