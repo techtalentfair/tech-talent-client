@@ -4,7 +4,6 @@ import React from "react";
 
 type ButtonProps = {
   href?: string;
-  onClick?: () => void;
   children: React.ReactNode;
   variant?: "primary" | "secondary";
   className?: string;
@@ -13,7 +12,6 @@ type ButtonProps = {
 
 const CustomButton: React.FC<ButtonProps> = ({
   href,
-  onClick,
   children,
   variant = "primary",
   className,
@@ -42,7 +40,6 @@ const CustomButton: React.FC<ButtonProps> = ({
 
   return (
     <button
-      onClick={onClick}
       className={clsx(baseStyles, typeStyles, className)}
       {...(props as React.ButtonHTMLAttributes<HTMLButtonElement>)}
     >
