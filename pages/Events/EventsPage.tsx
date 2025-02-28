@@ -2,9 +2,9 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ImageSectoin from "./Sections/ImageSection";
 import CardEvents from "./Sections/CardEvents";
-import EventsList from "./Sections/EventsList";
+import EventsList from "@/components/EventsList";
 import RegisterSectionComponent from '@/components/RegisterSectionComponent';
-import { exampleEvent } from '@/data/eventsData'
+import { agendaData , exampleEvent} from '@/data/eventsData'
 import NewsletterFooter from "@/components/NewsletterFooter";
 
 export default function EventsPage() {
@@ -15,8 +15,8 @@ export default function EventsPage() {
     <ImageSectoin />
         <CardEvents />
         <RegisterSectionComponent eventId={exampleEvent.id} />
-        <EventsList />
-    </main>
+        <EventsList  eventsData={agendaData}/>
+        </main>
         <NewsletterFooter/>
       <Footer />
     </>
