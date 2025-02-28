@@ -23,7 +23,7 @@ export const agendaData: DEventTimeSlot[] = [
     },
     description:
       '"Smart College Management System (SCMS)" is an innovative online platform designed to streamline and enhance all academic and administrative processes within a college operating under the credit hour system. The system provides an easy-to-use interface for student and faculty registration, scheduling of course registrations and timetables, management of grades and academic reports, and effective communication among all stakeholders. The system aims to simplify daily operations within the college and improve the academic management and educational experience',
-    imageUri: "/SCMS.png",
+    imageUri: "/assets/SCMS.png",
   },
   {
     title: "Scholar Sync",
@@ -35,7 +35,7 @@ export const agendaData: DEventTimeSlot[] = [
     },
     description:
       "the project goal is to make it easy for college admins to check and manage professors information for fast reporting whenever needed.",
-    imageUri: "/ScholarSync.png",
+    imageUri: "/assets/ScholarSync.png",
   },
   {
     title: "Petopia",
@@ -47,7 +47,7 @@ export const agendaData: DEventTimeSlot[] = [
     },
     description:
       '"Petopia" is website and mobile app, It is concerned with caring for pets, solving the problems they face in life, share feeds with others, selling the necessary products they need, and ways to communicate together, and thus this program is considered a complete community for pets.',
-    imageUri: "/Petopia.jpg",
+    imageUri: "/assets/Petopia.jpg",
   },
   {
     title: "UpLearn",
@@ -59,7 +59,7 @@ export const agendaData: DEventTimeSlot[] = [
     },
     description:
       "The project aims to create an efficient system for managing course registration and facilitating communication between the board and students. The goal is to streamline enrollment processes and ensure clear, timely exchanges of information and updates.",
-    imageUri: "/LMS.jpg",
+    imageUri: "/assets/LMS.jpg",
   },
   {
     title: "Edusphere",
@@ -71,7 +71,7 @@ export const agendaData: DEventTimeSlot[] = [
     },
     description:
       "An educational platform for all fields and uploading a course for any field.",
-    imageUri: "/Edusphere.png",
+    imageUri: "/assets/Edusphere.png",
   },
   {
     title: "Rescue Wheels",
@@ -83,7 +83,7 @@ export const agendaData: DEventTimeSlot[] = [
     },
     description:
       "1. Provide an SOS service for broken vehicles \n2. Connect vehicle owners with repair centers to do regular checkups and maintenance",
-    imageUri: "/RescueWheels.jpg",
+    imageUri: "/assets/RescueWheels.jpg",
   },
   {
     title: "Hospital Management System",
@@ -95,7 +95,7 @@ export const agendaData: DEventTimeSlot[] = [
     },
     description:
       "This hospital management system allows patients to reserve clinic appointments and make payments. \nPatients can upload their medical records and view their reservation history. \nDoctors can see their list of patients and choose to take or ignore cases. The HR department can assign doctors and nurses to clinics and create accounts for both doctors and nurses. It is designed to manage the entire hospital efficiently.",
-    imageUri: "/hms.jpg",
+    imageUri: "/assets/hms.jpg",
   },
   {
     title: "Live Sign Language Translation",
@@ -107,7 +107,7 @@ export const agendaData: DEventTimeSlot[] = [
     },
     description:
       "The main goal of our project is to make communication easier between people who use sign language and others who don't understand it.",
-    imageUri: "/lslt.jpg",
+    imageUri: "/assets/lslt.jpg",
   },
   {
     title: "TAMEIT",
@@ -119,7 +119,7 @@ export const agendaData: DEventTimeSlot[] = [
     },
     description:
       "Someone beloved once told me, “Name it to tame it”, and he was right indeed.\nOur application is the one that will help you do it. Mental illness is serious and can control everything in our lives every day, so it’s important and necessary to check our mental health very often just as important to check our physical health, mental and physical health are equally important components of overall health.\nOur application will help you to name your mental illness, get to know the symptoms, and reach highly rated doctors, you can also take tests to know which mental illness is the closest to your symptoms. We also provide a trained and experienced chatbot to tell you more about mental health, illness, symptoms and can tell you what to do to start your mental health journey.",
-    imageUri: "/tameit.jpeg",
+    imageUri: "/assets/tameit.jpeg",
   },
   {
     title: "Sahl",
@@ -130,7 +130,7 @@ export const agendaData: DEventTimeSlot[] = [
       name: "Mosharafa Hall",
     },
     description: `The talk will center around NFC (Near Field Communication) technology, its inception, and the journey that led to its adoption. We will explore the practical applications of NFC, its evolution, and the impact it has had across various industries.`,
-    imageUri: "/events/shal-image.jpg",
+    imageUri: "/assets/events/shal-image.jpg",
   },
   {
     title: "Break 🍕",
