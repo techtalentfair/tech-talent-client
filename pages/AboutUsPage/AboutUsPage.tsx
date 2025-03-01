@@ -46,26 +46,29 @@ export default function AboutUsPage() {
     <div className="bg-black text-white">
       {/* Header */}
       <section
-        className="relative h-[60vh] flex items-center justify-center bg-cover bg-center bg-no-repeat after:absolute after:inset-0 after:bg-purple-500 after:opacity-50"
-        style={{ backgroundImage: "url('/assets/b7c48150c2b2c1bd0088b9f3b1730eee.jpeg')" }}
-      >
-        <div className="relative text-center z-10 px-6">
-          <h1 className="text-5xl font-bold text-white italic">
-            <span className="text-yellow-500">TECH TALENT</span> Student Activity
-          </h1>
-          <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-300">
-            Tech Talent is a vibrant community created specifically for the Computer Science department within the Faculty of Science at Cairo University.
-          </p>
-        </div>
-      </section>
+  className="relative h-[60vh] flex items-center justify-center bg-cover bg-center bg-no-repeat 
+             after:absolute after:inset-0 after:bg-gradient-to-r after:from-purple-900 after:to-purple-400 after:opacity-60"
+  style={{ backgroundImage: "url('/assets/b7c48150c2b2c1bd0088b9f3b1730eee.jpeg')" }}
+>
+  <div className="relative text-center z-10 px-6">
+    <h1 className="text-5xl font-bold text-white italic">
+      <span className="text-yellow-500">TECH TALENT</span> Student Activity
+    </h1>
+    <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-300">
+      Tech Talent is a vibrant community created specifically for the Computer Science department within the Faculty of Science at Cairo University. 
+      Our mission is to assist students in navigating the ever-evolving world of technology and to prepare them for the competitive job market.
+    </p>
+  </div>
+</section>
+
 
       {/* Video  */}
-      <section className="w-full flex justify-center items-center bg-gray-900">
-        <video className="w-full h-[400px]" controls>
-          <source src="/assets/TechTalent1080p_30f_20240615_152836.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </section>
+      <section className="flex justify-center items-center bg-gray-900">
+  <video className="w-[1440px] h-[550px] object-cover" controls>
+    <source src="/assets/TechTalent1080p_30f_20240615_152836.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</section>
 
       {/* Team  */}
       <section className="py-20 px-6 max-w-6xl mx-auto">
