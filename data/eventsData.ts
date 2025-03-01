@@ -2,6 +2,7 @@ import { DEventModel, DEventTimeSlot } from "@/types/database";
 
 export const agendaData: DEventTimeSlot[] = [
   {
+    id : "1",
     title: "Opening Remarks",
     url: null,
     date: "July 2",
@@ -14,6 +15,7 @@ export const agendaData: DEventTimeSlot[] = [
     imageUri: null,
   },
   {
+    id : "2",
     title: "Smart College Management System (SCMS)",
     url: null,
     date: "July 2",
@@ -26,6 +28,7 @@ export const agendaData: DEventTimeSlot[] = [
     imageUri: "/assets/SCMS.png",
   },
   {
+    id : "3",
     title: "Scholar Sync",
     url: null,
     date: "July 2",
@@ -38,6 +41,7 @@ export const agendaData: DEventTimeSlot[] = [
     imageUri: "/assets/ScholarSync.png",
   },
   {
+    id : "4",
     title: "Petopia",
     url: null,
     date: "July 2",
@@ -50,6 +54,7 @@ export const agendaData: DEventTimeSlot[] = [
     imageUri: "/assets/Petopia.jpg",
   },
   {
+    id : "5",
     title: "UpLearn",
     url: null,
     date: "July 2",
@@ -62,6 +67,7 @@ export const agendaData: DEventTimeSlot[] = [
     imageUri: "/assets/LMS.jpg",
   },
   {
+    id : "6",
     title: "Edusphere",
     url: null,
     date: "July 2",
@@ -74,6 +80,7 @@ export const agendaData: DEventTimeSlot[] = [
     imageUri: "/assets/Edusphere.png",
   },
   {
+    id : "7",
     title: "Rescue Wheels",
     url: null,
     date: "July 2",
@@ -86,6 +93,7 @@ export const agendaData: DEventTimeSlot[] = [
     imageUri: "/assets/RescueWheels.jpg",
   },
   {
+    id : "8",
     title: "Hospital Management System",
     url: null,
     date: "July 2",
@@ -98,6 +106,7 @@ export const agendaData: DEventTimeSlot[] = [
     imageUri: "/assets/hms.jpg",
   },
   {
+    id : "9",
     title: "Live Sign Language Translation",
     url: null,
     date: "July 2",
@@ -110,6 +119,7 @@ export const agendaData: DEventTimeSlot[] = [
     imageUri: "/assets/lslt.jpg",
   },
   {
+    id : "10",
     title: "TAMEIT",
     url: null,
     date: "July 2",
@@ -122,6 +132,7 @@ export const agendaData: DEventTimeSlot[] = [
     imageUri: "/assets/tameit.jpeg",
   },
   {
+    id : "11",
     title: "Sahl",
     url: "https://sahlpay.app/ar/",
     date: "July 2",
@@ -133,6 +144,7 @@ export const agendaData: DEventTimeSlot[] = [
     imageUri: "/assets/events/shal-image.jpg",
   },
   {
+    id : "12",
     title: "Break 🍕",
     url: null, // this means no link
     date: "July 2",
@@ -144,6 +156,7 @@ export const agendaData: DEventTimeSlot[] = [
     imageUri: null, // this means no image for this event card
   },
   {
+    id : "13",
     title: "Be Green",
     url: null,
     date: "July 2",
@@ -156,6 +169,7 @@ export const agendaData: DEventTimeSlot[] = [
     imageUri: "/Be_Green1.png",
   },
   {
+    id : "14",
     title: "AToZ",
     url: null,
     date: "July 2",
@@ -168,6 +182,7 @@ export const agendaData: DEventTimeSlot[] = [
     imageUri: "/Atoz.jpg",
   },
   {
+    id : "15",
     title: "Closing Remarks/Wrap-Up 🎉",
     url: null,
     date: "July 2",

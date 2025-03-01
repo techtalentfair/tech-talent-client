@@ -6,6 +6,7 @@ export interface DEventLocation {
 }
 
 export interface DEventTimeSlot {
+  id?: string;
   title: string;
   url?: string | null;
   date: string; // Format: "2 July 2025 "
