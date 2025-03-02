@@ -1,4 +1,6 @@
 import React from "react";
+import { agendaData } from '@/data/eventsData'
+import OurAgenda from "./Sections/OurAgenda";
 
 interface EventDetailsPageProps {
   eventId: string;
@@ -7,8 +9,9 @@ interface EventDetailsPageProps {
 export default function EventDetailsPage({ eventId }: EventDetailsPageProps) {
 
   return (
-    <div className="flex justify-center items-center h-screen">
-      event details page with Id = {eventId}
-    </div>
+    <>
+    {eventId}
+    <OurAgenda  eventsData={agendaData}/>
+    </>
   );
 }
