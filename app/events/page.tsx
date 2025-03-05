@@ -1,6 +1,6 @@
 import EventsPage from "@/pages/Events/EventsPage";
 
-export default function Home() {
+export default function page() {
   return (
     <EventsPage/>
   );
