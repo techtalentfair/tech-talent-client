@@ -1,9 +1,9 @@
 import React from 'react'
 import ImageSectoin from "./Sections/ImageSection";
 import CardEvents from "./Sections/CardEvents";
-import EventsList from "@/components/EventsList";
 import RegisterSectionComponent from '@/components/RegisterSectionComponent';
 import { agendaData , exampleEvent} from '@/data/eventsData'
+import OurEvents from './Sections/OurEvents';
 
 export default function EventsPage() {
   return (
@@ -11,7 +11,7 @@ export default function EventsPage() {
         <ImageSectoin />
         <CardEvents />
         <RegisterSectionComponent eventId={exampleEvent.id} />
-        <EventsList  eventsData={agendaData}/>
+        <OurEvents  eventsData={agendaData}/>
     </>
   );
 }

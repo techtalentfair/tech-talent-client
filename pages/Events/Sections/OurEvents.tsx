@@ -6,7 +6,7 @@ interface Events {
   eventsData: DEventTimeSlot[];
 }
 
-function EventsList({eventsData} : Events) {
+function OurEvents({eventsData} : Events) {
   return (
     <section
       className="container flex flex-col min-w-full min-h-[calc(100vh-80px)] py-20"
@@ -22,4 +22,4 @@ function EventsList({eventsData} : Events) {
   );
 }
 
-export default EventsList;
+export default OurEvents;
