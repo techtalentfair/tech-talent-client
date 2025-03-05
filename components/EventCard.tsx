@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import {
   IoCalendarOutline,
   IoLocationOutline,
@@ -9,6 +10,7 @@ import { DEventTimeSlot } from "@/types/database";
 
 
 const EventCard: React.FC<DEventTimeSlot> = ({
+  id,
   title,
   url,
   date,
@@ -19,11 +21,11 @@ const EventCard: React.FC<DEventTimeSlot> = ({
 }) => {
   return (
     <div className="flex flex-col w-full md:p-10 p-5">
-      <a href={url ? url : "#"} target="_blank" rel="noopener noreferrer">
-        <h3 className="event-title md:after:w-10 md:after:h-10 md:after:-left-16 md:after:top-0 sm:after:w-6 sm:after:h-6 sm:after:-left-[34px] sm:after:top-1 after:w-5 after:h-5 after:-left-8 after:top-1 text-xl sm:text-2xl md:text-3xl font-bold text-white pb-2 mb-2 relative after:border-purple-700 hover:text-purple-400 hover:cursor-pointer transition-all ease-in-out duration-100">
+     <Link href={`/event-details/${id}`}>
+        <h3 className="event-title text-xl sm:text-2xl md:text-3xl font-bold text-white pb-2 mb-2 relative cursor-pointer hover:text-purple-400 transition-all">
           {title}
         </h3>
-      </a>
+      </Link>
       <div className="flex gap-5 mb-8 flex-wrap">
         <div className="flex items-center">
           <IoCalendarOutline size={24} color="rgb(192 132 252)" />
