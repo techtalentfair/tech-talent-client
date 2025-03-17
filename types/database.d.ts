@@ -54,3 +54,25 @@
     url: string;
     imageURL: string;
   }
+
+  // Static AboutPage Type Definition
+  export interface TeamMemberCardSchema {
+    title: string,
+    description: string,
+    role: string,
+    image: string,
+  }
+
+  export interface DStaticAboutPageModel {
+    landingSection: {
+      landingTitle: string
+      landingSubTitle: string,
+      landingDescription: string,
+      landingImage: string,
+      landingVideo: string,
+    },
+    meetOurTeam: {
+      mentorCard: TeamMemberCardSchema,
+      headTeams: [TeamMemberCardSchema],
+    },
+  }
