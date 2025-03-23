@@ -9,6 +9,7 @@ interface PhoneInputFieldProps {
   required?: boolean;
   error?: string;
   onChange: (e: { target: { value: string; name: string } }) => void;
+  onBlur?: React.FocusEventHandler<HTMLInputElement>;
   value: string;
   placeholder?: string;
   defaultCountry?: string;
@@ -50,7 +51,7 @@ const PhoneInputField: React.FC<PhoneInputFieldProps> = ({
         inputClassName={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 ${
           error
             ? "border-red-500 focus:ring-red-300"
-            : "border-gray-300 focus:ring-blue-300"
+            : "border-gray-300 focus:ring-purple-500"
         }`}
       />
       {error && <p className="mt-1 text-sm text-red-500">{error}</p>}
