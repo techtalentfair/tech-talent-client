@@ -10,6 +10,7 @@ interface Props {
   type?: string;
   required?: boolean;
   onChange: React.ChangeEventHandler<HTMLInputElement>;
+  onBlur?: React.FocusEventHandler<HTMLInputElement>;
   error: string;
   width?: "w-full";
 }
@@ -32,7 +33,7 @@ const TextInputLight = ({
         {required && <span className="text-purple-500 ml-1">*</span>}
       </label>
       <input
-        className="p-2 bg-neutral-100 text-black rounded w-full"
+        className="p-2 bg-neutral-100 text-black rounded w-full focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-colors duration-200"
         id={id}
         name={name}
         type={type}
