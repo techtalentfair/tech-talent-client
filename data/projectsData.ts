@@ -93,4 +93,5 @@ export const projectsData : DProjectModel[] = [
     relatedEventsTitles: "2023 Grads Project ",
     technologies: ["React Native", "Firebase"],
   },
+  
 ];
