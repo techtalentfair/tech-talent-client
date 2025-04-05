@@ -21,6 +21,10 @@ export default {
       animation: {
         "infinite-scroll": "infinite-scroll 20s linear infinite",
       },
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+      },
+      
     },
   },
   plugins: [],

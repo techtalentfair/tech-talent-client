@@ -1,6 +1,8 @@
 import React from "react";
 import Player from "next-video/player";
 import { DProjectModel } from "@/types/database";
+import router from "next/dist/client/router";
+import Link from "next/link";
 
 interface ProjectCardProps {
   project: DProjectModel;
@@ -40,13 +42,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         {/* if the url is not null, then display the Know More button*/}
         {
           project.url && (
-            <a
-              href={project.url}
+            <Link
+              href={`/project-details/${project.id}`}
               target="_blank"
+              rel="noopener noreferrer"
+              // onClick={() => router.push(`/project-details/${project.id}`)}
               className="text-purple-500 font-extrabold mt-2 hover:text-white hover:cursor-pointer hover:underline hover:transition-all duration-300 ease-in-out"
             >
               Know More
-            </a>
+            </Link>
           )
         }
         <div className="flex flex-row flex-wrap mt-10 items-center">

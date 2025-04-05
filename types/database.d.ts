@@ -34,6 +34,7 @@
     role: string;
     imageSrc: string;
     url?: string | null;
+    bio: string; // Bio for the project member
   }
 
   export interface DProjectModel {
