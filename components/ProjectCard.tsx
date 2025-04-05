@@ -1,7 +1,6 @@
 import React from "react";
 import Player from "next-video/player";
 import { DProjectModel } from "@/types/database";
-import router from "next/dist/client/router";
 import Link from "next/link";
 
 interface ProjectCardProps {
